@@ -1,21 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-
-const useCounter = () => {
-  const [count, setCount] = useState(0);
-
-  const increaseHandler = () => {
-    setCount(count + 1);
-  };
-  const decreaseHandler = () => {
-    setCount(count - 1);
-  };
-  const resetHandler = () => {
-    setCount(0);
-  };
-
-  return { count, increaseHandler, decreaseHandler, resetHandler };
-};
+import { useCounter } from "./Counter";
 
 const App = () => {
   const {
